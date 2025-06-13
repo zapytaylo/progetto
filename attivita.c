@@ -135,7 +135,7 @@ void generaReportFile(Nodo* testa, FILE* input, FILE* output) {
     char oggi[DATA_LEN];
     
     fprintf(output, "\nHai scelto 'Report settimanale' \n");
-    fprintf(output, "Che giorno è oggi? (AAAA-MM-GG): ");
+    fprintf(output, "Inserisci la data di oggi (AAAA-MM-GG): ");
     fgets(oggi, DATA_LEN, input);
     oggi[strcspn(oggi, "\n")] = 0;
     
